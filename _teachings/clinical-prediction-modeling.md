@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Stanford BIOS 441$:$ Do's and Don'ts in Clinical Prediction Modeling
-description: 
+description:
 instructor: Harry Lee
 year: 2026
 term: Spring
@@ -21,12 +21,12 @@ This course is open to all graduate students and postdocs at Stanford University
 ## Learning Objectives
 
 - Understand the fundamental elements of developing and validating a clinical prediction model.
--	Explain key statistical metrics and clinical utility used to assess clinical prediction models.
--	Critically appraise the quality and applicability of clinical prediction models.
--	Discuss the challenges in implementing and adopting clinical prediction models in clinical practice.
--	Develop an appreciation for open science research and reproducibility principles.
+- Explain key statistical metrics and clinical utility used to assess clinical prediction models.
+- Critically appraise the quality and applicability of clinical prediction models.
+- Discuss the challenges in implementing and adopting clinical prediction models in clinical practice.
+- Develop an appreciation for open science research and reproducibility principles.
 
 ## Textbooks
 
-- "Clinical Prediction Models" by Ewout W. Steyerberg 
+- "Clinical Prediction Models" by Ewout W. Steyerberg
 - "Improving Health Care with Clinical Prediction Models" by Luc J.M. Smits, Sander M.J. van Kuijk, Laure Wynants

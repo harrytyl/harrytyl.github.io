@@ -1,7 +1,7 @@
 ---
 layout: course
 title: UBC PHAR 423$:$ Statistical Methods for Pharmaceutical Outcomes Research
-description: 
+description:
 instructor: Harry Lee and Mohsen Sadatsafavi
 year: 2023
 term: Fall
