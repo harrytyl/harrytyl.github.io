@@ -7,14 +7,6 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<div class="publications">
-
 ## In press
 
 - *Title of paper in press* — Author One, Author Two, ..., Journal Name. 
@@ -29,6 +21,14 @@ nav_order: 2
 
 - *Title of paper in progress* — Author One, Author Two, ..., Status details.
 - *Another paper in progress* — Author One, Author Two, ..., Status details.
+
+<!-- _pages/publications.md -->
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
+<div class="publications">
 
 {% bibliography %}
 
