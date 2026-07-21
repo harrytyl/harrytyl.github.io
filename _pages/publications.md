@@ -15,6 +15,21 @@ nav_order: 2
 
 <div class="publications">
 
+## In press
+
+- *Title of paper in press* — Author One, Author Two, ..., Journal Name. 
+- *Another in-press paper* — Author One, Author Two, ..., Journal Name.
+
+## Under review
+
+- *Title of paper under review* — Author One, Author Two, ..., Target Conference/Journal.
+- *Another paper under review* — Author One, Author Two, ..., Target Conference/Journal.
+
+## In progress
+
+- *Title of paper in progress* — Author One, Author Two, ..., Status details.
+- *Another paper in progress* — Author One, Author Two, ..., Status details.
+
 {% bibliography %}
 
 </div>
