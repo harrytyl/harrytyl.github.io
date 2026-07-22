@@ -7,6 +7,79 @@ nav: true
 nav_order: 2
 ---
 
+<!-- ============================================================
+     Publications summary block.
+     Edit the summary sentence and the three stat numbers below
+     when you add papers. Colors adapt to light/dark automatically
+     via al-folio's CSS variables.
+     ============================================================ -->
+<div class="pubsum">
+  <p class="pubsum-lead">
+    Postdoctoral fellow in the Han Lab at Stanford University School of Medicine. My research
+    develops statistical and health-economic methods — value-of-information analysis, risk
+    prediction, and decision modeling — with applications in respiratory epidemiology (asthma and COPD).
+  </p>
+  <div class="pubsum-stats">
+    <div class="pubsum-stat">
+      <span class="pubsum-num">22</span>
+      <span class="pubsum-label">Publications</span>
+    </div>
+    <div class="pubsum-stat">
+      <span class="pubsum-num">10</span>
+      <span class="pubsum-label">First-author</span>
+    </div>
+    <div class="pubsum-stat">
+      <span class="pubsum-num">2020</span>
+      <span class="pubsum-label">Publishing since</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .pubsum {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem 2rem;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--global-divider-color, #e8e8e8);
+    border-radius: 0.6rem;
+    background-color: var(--global-card-bg-color, #fafafa);
+  }
+  .pubsum-lead {
+    flex: 1 1 320px;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--global-text-color, #1c1c1c);
+  }
+  .pubsum-stats {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+  }
+  .pubsum-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 4.5rem;
+  }
+  .pubsum-num {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--global-theme-color, #b509ac);
+  }
+  .pubsum-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--global-text-color-light, #828282);
+  }
+</style>
+
 ## In press
 
 - _Title of paper in press_ — Author One, Author Two, ..., Journal Name.
