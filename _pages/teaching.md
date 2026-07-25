@@ -2,9 +2,9 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: 
+description:
 nav: true
-nav_order: 6
+nav_order: 5
 calendar: true
 ---
 
