@@ -82,18 +82,6 @@ nav_order: 2
      Your in-press Statistical Science paper already appears in the list
      further down with an "In-press" badge, so it isn't duplicated here. -->
 
-## Under review
-
-- _Paper title_ — T. Y. Lee, co-authors — _Target journal_.
-
-## Work in progress
-
-- _Paper title_ — T. Y. Lee, co-authors — in preparation.
-
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
 
 <div class="publications">
