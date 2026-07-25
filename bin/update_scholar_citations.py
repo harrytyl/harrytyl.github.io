@@ -40,6 +40,7 @@ def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
+    existing_data = None
 
     # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
@@ -83,6 +84,16 @@ def get_scholar_citations() -> None:
         print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")
         sys.exit(1)
 
+    # Author-level metrics (surfaced in the publications summary block).
+    citation_data["metadata"]["hindex"] = author_data.get("hindex")
+    citation_data["metadata"]["i10index"] = author_data.get("i10index")
+    citation_data["metadata"]["total_citations"] = author_data.get("citedby")
+    print(
+        f"Author metrics - h-index: {citation_data['metadata']['hindex']}, "
+        f"i10-index: {citation_data['metadata']['i10index']}, "
+        f"total citations: {citation_data['metadata']['total_citations']}"
+    )
+
     for pub in author_data["publications"]:
         try:
             pub_id = pub.get("pub_id") or pub.get("author_pub_id")
@@ -108,8 +119,16 @@ def get_scholar_citations() -> None:
                 f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
             )
 
-    # Compare new data with existing data
-    if existing_data and existing_data.get("papers") == citation_data["papers"]:
+    # Compare new data with existing data (papers and author-level metrics)
+    existing_meta = (existing_data or {}).get("metadata", {})
+    new_meta = citation_data["metadata"]
+    if (
+        existing_data
+        and existing_data.get("papers") == citation_data["papers"]
+        and existing_meta.get("hindex") == new_meta.get("hindex")
+        and existing_meta.get("i10index") == new_meta.get("i10index")
+        and existing_meta.get("total_citations") == new_meta.get("total_citations")
+    ):
         print("No changes in citation data. Skipping file update.")
         return
 

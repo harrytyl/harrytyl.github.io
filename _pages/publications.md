@@ -29,8 +29,8 @@ nav_order: 2
       <span class="pubsum-label">First-author</span>
     </div>
     <div class="pubsum-stat">
-      <span class="pubsum-num">2020</span>
-      <span class="pubsum-label">Publishing since</span>
+      <span class="pubsum-num">{{ site.data.citations.metadata.hindex | default: "—" }}</span>
+      <span class="pubsum-label">h-index</span>
     </div>
   </div>
 </div>
@@ -80,20 +80,17 @@ nav_order: 2
   }
 </style>
 
-## In press
-
-- _Title of paper in press_ — Author One, Author Two, ..., Journal Name.
-- _Another in-press paper_ — Author One, Author Two, ..., Journal Name.
+<!-- Edit the rows below with your real papers; delete any you don't need.
+     Your in-press Statistical Science paper already appears in the list
+     further down with an "In-press" badge, so it isn't duplicated here. -->
 
 ## Under review
 
-- _Title of paper under review_ — Author One, Author Two, ..., Target Conference/Journal.
-- _Another paper under review_ — Author One, Author Two, ..., Target Conference/Journal.
+- _Paper title_ — T. Y. Lee, co-authors — _Target journal_.
 
-## In progress
+## Work in progress
 
-- _Title of paper in progress_ — Author One, Author Two, ..., Status details.
-- _Another paper in progress_ — Author One, Author Two, ..., Status details.
+- _Paper title_ — T. Y. Lee, co-authors — in preparation.
 
 <!-- _pages/publications.md -->
 
