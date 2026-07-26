@@ -21,7 +21,7 @@ nav_order: 7
 ## Statistical editor
 
 <ul class="svc-list">
-  <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">23</span><</b></li>
+  <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">23</span></b></li>
 </ul>
 
 ## Peer review (referee)
