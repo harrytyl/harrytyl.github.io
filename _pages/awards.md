@@ -2,15 +2,14 @@
 layout: page
 permalink: /awards/
 title: Award
-description: Awards, honors, scholarships, fellowships, and competitive research grants.
+description: 
 nav: true
 nav_order: 4
 ---
 
 <div class="infobox">
   <p class="infobox-lead">
-    Competitive fellowships, scholarships, and honors recognizing research in quantitative
-    health outcomes, statistics, and decision science.
+    My research has been recognized through national and international awards and competitive funding at the graduate and postdoctoral levels. I further strengthened my grantsmanship during my postdoctoral training by preparing two grant proposals.
   </p>
   <div class="infobox-stats">
     <div class="infobox-stat"><span class="infobox-num">15</span><span class="infobox-label">Awards &amp; Scholarships</span></div>
