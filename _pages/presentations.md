@@ -2,18 +2,17 @@
 layout: page
 permalink: /presentations/
 title: Presentation
-description: Invited talks, contributed talks, and posters at conferences and seminars.
+description:
 nav: true
 nav_order: 3
 ---
 
 <div class="infobox">
   <p class="infobox-lead">
-    Talks and posters at international conferences, symposia, and invited seminars in
-    statistics, decision science, and respiratory / cancer epidemiology.
+    Knolwedge translation is a key aspect of my research
   </p>
   <div class="infobox-stats">
-    <div class="infobox-stat"><span class="infobox-num">34</span><span class="infobox-label">Presentations</span></div>
+    <div class="infobox-stat"><span class="infobox-num">35</span><span class="infobox-label">Presentations</span></div>
     <div class="infobox-stat"><span class="infobox-num">22</span><span class="infobox-label">Oral</span></div>
     <div class="infobox-stat"><span class="infobox-num">13</span><span class="infobox-label">Posters</span></div>
   </div>
