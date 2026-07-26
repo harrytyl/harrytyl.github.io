@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Banting Postdoctoral Fellow, Quantitative Sciences Unit, Stanford University School of Medicine 
+subtitle: Banting Postdoctoral Fellow, Quantitative Sciences Unit, Stanford University School of Medicine
 
 profile:
   align: right

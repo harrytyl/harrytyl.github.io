@@ -7,6 +7,49 @@ const read = (relPath) => fs.readFileSync(path.join(root, relPath), "utf8");
 const exists = (relPath) => fs.existsSync(path.join(root, relPath));
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
+// Local overrides of gem-owned files are permitted when they are recorded in
+// `.al-folio-overrides.yml` (see `al-folio upgrade overrides audit`). Such a
+// file is an acknowledged, tracked exception rather than starter ownership,
+// so the component-path check below ignores it. Anything unacknowledged still
+// fails the contract.
+const acknowledgedOverrides = (() => {
+  const overridesFile = ".al-folio-overrides.yml";
+  if (!exists(overridesFile)) {
+    return new Set();
+  }
+  const paths = new Set();
+  let inOverrides = false;
+  for (const line of read(overridesFile).split("\n")) {
+    if (/^overrides:\s*$/.test(line)) {
+      inOverrides = true;
+      continue;
+    }
+    if (inOverrides) {
+      // A new top-level key ends the `overrides:` block.
+      if (/^\S/.test(line) && !/^\s*(#|---)/.test(line)) {
+        inOverrides = false;
+        continue;
+      }
+      const entry = line.match(/^ {2}["']?([^"':]+)["']?:\s*$/);
+      if (entry) {
+        paths.add(entry[1].trim());
+      }
+    }
+  }
+  return paths;
+})();
+
+const filesUnder = (relPath) => {
+  const abs = path.join(root, relPath);
+  if (!fs.existsSync(abs)) {
+    return [];
+  }
+  if (!fs.statSync(abs).isDirectory()) {
+    return [relPath];
+  }
+  return fs.readdirSync(abs, { withFileTypes: true }).flatMap((entry) => filesUnder(path.posix.join(relPath, entry.name)));
+};
+
 const failures = [];
 
 const packageJson = JSON.parse(read("package.json"));
@@ -62,8 +105,16 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
 }
 
 for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
-  if (exists(forbiddenPath)) {
-    failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
+  if (!exists(forbiddenPath)) {
+    continue;
+  }
+  const unacknowledged = filesUnder(forbiddenPath).filter((file) => !acknowledgedOverrides.has(file));
+  if (unacknowledged.length > 0) {
+    failures.push(
+      `Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem, ` +
+        `or record a deliberate local override with \`al-folio upgrade overrides accept\` ` +
+        `(unacknowledged: ${unacknowledged.join(", ")}).`
+    );
   }
 }
 
