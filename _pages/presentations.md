@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /presentations/
-title: Presentation
+title: Presentations
 description:
 nav: true
 nav_order: 3
@@ -9,7 +9,7 @@ nav_order: 3
 
 <div class="infobox">
   <p class="infobox-lead">
-    Knolwedge translation is a key aspect of my research
+   Knowledge translation is crucial to my interdisciplinary research. I regularly present my work to diverse audiences, including the general public, clinicians, epidemiologists, health economists, and statisticians.
   </p>
   <div class="infobox-stats">
     <div class="infobox-stat"><span class="infobox-num">35</span><span class="infobox-label">Presentations</span></div>
