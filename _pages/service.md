@@ -12,7 +12,7 @@ nav_order: 7
     Service to the academic community as a statistical editor, peer reviewer, grant reviewer, conference session organizer, and consultant.
   </p>
   <div class="infobox-stats">
-    <div class="infobox-stat"><span class="infobox-num">70+</span><span class="infobox-label">Manuscripts Reviewed</span></div>
+    <div class="infobox-stat"><span class="infobox-num">36</span><span class="infobox-label">Manuscripts Reviewed</span></div>
     <div class="infobox-stat"><span class="infobox-num">7</span><span class="infobox-label">Journals</span></div>
     <div class="infobox-stat"><span class="infobox-num">4</span><span class="infobox-label">Consultancies</span></div>
   </div>
@@ -21,7 +21,7 @@ nav_order: 7
 ## Statistical editor
 
 <ul class="svc-list">
-  <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">60+</span><</b></li>
+  <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">23</span><</b></li>
 </ul>
 
 ## Peer review (referee)
