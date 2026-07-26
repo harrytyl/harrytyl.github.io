@@ -1,41 +1,53 @@
 ---
 layout: default
 ---
-{% assign cv_feature_enabled = site.al_folio.features.cv.enabled | default: true %}
-
-{% if site.plugins contains 'al_folio_cv' and cv_feature_enabled %}
-  {% al_folio_cv_render %}
-{% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-description">CV rendering is unavailable.</p>
-    </header>
-    <article>
-      <p>Enable the <code>al_folio_cv</code> plugin and set <code>al_folio.features.cv.enabled: true</code> to render this page.</p>
-    </article>
-  </div>
-{% endif %}
-
 <!--
-  Local override of al_folio_core's _layouts/cv.liquid. Identical to the gem
-  template above, plus the styling below, which enlarges the download-PDF icon
-  in the page header. The CV page's own body content is not rendered by the CV
-  template, so this styling cannot live in _pages/cv.md.
+  Local override of al_folio_core's _layouts/cv.liquid.
+
+  The gem template calls {% raw %}{% al_folio_cv_render %}{% endraw %}, which renders a full CV from
+  assets/json/resume.json (contact table, experience, education, ...). This
+  page instead shows only the contact/profile icons - the same set the about
+  page renders via jekyll-socials - so the CV itself is the linked PDF. The
+  header download-PDF icon is intentionally omitted because the CV icon below
+  already links to the same file.
 -->
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="social cv-social">
+      <div class="contact-icons">{% social_links %}</div>
+      {% if site.contact_note %}
+        <div class="contact-note">{{ site.contact_note }}</div>
+      {% endif %}
+    </div>
+  </article>
+</div>
+
 <style>
-  .post-title .fa-file-pdf {
-    font-size: 2.75rem;
-    line-height: 1;
-    vertical-align: middle;
-    color: var(--global-theme-color);
-    transition:
-      transform 0.15s ease,
-      opacity 0.15s ease;
+  /* The CV page is intentionally sparse, so give the icons more presence
+     than on the about page. */
+  .cv-social {
+    margin-top: 2rem;
+    text-align: center;
   }
 
-  .post-title .fa-file-pdf:hover {
-    transform: scale(1.08);
-    opacity: 0.85;
+  .cv-social .contact-icons {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .cv-social .contact-icons a {
+    margin: 0 0.4rem;
+  }
+
+  .cv-social .contact-note {
+    margin-top: 1.25rem;
   }
 </style>
