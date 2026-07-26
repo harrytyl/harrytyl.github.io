@@ -24,7 +24,7 @@ nav_order: 7
   <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">x23</span></b></li>
 </ul>
 
-## Peer review (referee)
+## Peer reviewer
 
 <ul class="svc-list">
   <li><em>European Respiratory Journal</em> <span class="count">×4</span></li>
@@ -63,7 +63,7 @@ nav_order: 7
   <li>JuliaCon <span class="count">×1</span></li>
 </ul>
 
-## Consulting
+## Consultant
 
 <ul class="svc-list">
   <li>
