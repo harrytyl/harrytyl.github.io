@@ -32,7 +32,12 @@ My path here has been non-linear. I am Korean-Canadian and grew up in Vancouver,
 
 <style>
   /* Capitalize the first letter of the About page section headings */
+  /* About page section headings ("selected publications" is the only one
+     while announcements and latest_posts are disabled): render as
+     "Selected Publications" and give it room above. */
   .post h2 {
     text-transform: uppercase;
+    text-transform: capitalize;
+    margin-top: 3.5rem;
   }
 </style>
