@@ -2,7 +2,7 @@
 layout: page
 permalink: /service/
 title: Service
-description: Editorial work, peer review, grant review, conference organizing, and consulting.
+description: 
 nav: true
 nav_order: 7
 ---
@@ -21,7 +21,7 @@ nav_order: 7
 ## Statistical editor
 
 <ul class="svc-list">
-  <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">23</span></b></li>
+  <li><span class="award-year">2024–2025</span> <b><em>Thorax</em> <span class="count">x23</span></b></li>
 </ul>
 
 ## Peer review (referee)

@@ -2,16 +2,14 @@
 layout: page
 permalink: /mentoring/
 title: Mentoring
-description: Research mentorship of undergraduate, community college, and high school students.
+description: 
 nav: true
 nav_order: 6
 ---
 
 <div class="infobox">
   <p class="infobox-lead">
-    I mentor students at every stage — high school through undergraduate — on research projects
-    in biostatistics, reproducibility, and health data science. Several have gone on to graduate
-    programs and industry positions.
+    Mentoring is central to my research program. My mentoring philosophy is to create a safe, inclusive environment and cultivate a growth mindset for independence and resilience. I mentor trainess at every stage from diverse backgrounds.
   </p>
   <div class="infobox-stats">
     <div class="infobox-stat"><span class="infobox-num">17</span><span class="infobox-label">Total Mentees</span></div>
