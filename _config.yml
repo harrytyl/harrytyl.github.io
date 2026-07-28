@@ -478,7 +478,7 @@ enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (htt
 # MapMyVisitors derives locations from visitor IP addresses, so consider
 # setting enable_cookie_consent above to true.
 visitor_map:
-  # tracker_id: 3p1XTk6Tlt7Xr21otjTDLHpsxo9ubf8Ro8r6rp1JD94
+  tracker_id: 3p1XTk6Tlt7Xr21otjTDLHpsxo9ubf8Ro8r6rp1JD94
   web_id: 1c6vz
   widget: image # js | image
 
