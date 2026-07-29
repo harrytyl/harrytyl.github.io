@@ -34,7 +34,7 @@ layout: default
       MapMyVisitors dashboard provides, with the tracker id taken from
       _config.yml; blanking visitor_map.tracker_id hides the whole box.
     {% endcomment %}
-    {% if site.visitor_map.tracker_id %}
+    {% if site.visitor_map.tracker_id and site.visitor_map.show_box %}
       <div class="infobox visitorbox">
         <p class="infobox-lead">
           Thanks for stopping by. The map shows how many people have visited this site and where they are reading from, courtesy of

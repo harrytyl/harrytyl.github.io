@@ -13,5 +13,5 @@ overrides:
     gem_version: 1.0.11
     upstream_path: _layouts/cv.liquid
     upstream_sha256: c586e8051e785b492a0f4452c4e06798d47a8c363d29487e48de4fcd9851700e
-    local_sha256: 0b095f0be4c0a202a8b1952edf7c8fe21ba3bd53fb303df247a0906b10210fd8
-    acknowledged_at: "2026-07-26"
+    local_sha256: 95d35a64588f0327850f77078ef745b2a8a7a63d373802f770a9b2728a3e28e2
+    acknowledged_at: "2026-07-29"
