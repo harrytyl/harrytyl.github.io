@@ -2,7 +2,12 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 cv_pdf: /assets/pdf/website_CV.pdf # path to your CV PDF file
-email: harrytyl@stanford.edu # your email address
+# email is deliberately NOT set here. jekyll-socials writes "mailto:<address>"
+# verbatim, which puts the plain address in the HTML for harvesters to scrape,
+# and it offers no hook to obfuscate it. The email icon is instead added by
+# _includes/footer.liquid from site.email, percent-encoded via encode_email.
+# (Pre-encoding the value here does not work: al_search applies encode_email a
+# second time, producing a double-encoded, broken mailto in the search palette.)
 # inspirehep_id: 1010907 # Inspire HEP author ID
 # rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: PrF7kHIAAAAJ # your Google Scholar ID

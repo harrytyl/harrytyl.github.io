@@ -34,6 +34,30 @@
 {% endif %}
 
 {% comment %}
+  Obfuscated email icon.
+
+  The address is kept out of _data/socials.yml because jekyll-socials writes
+  "mailto:<address>" verbatim, leaving the plain address in the HTML for
+  harvesters. Here it is percent-encoded with encode_email, which browsers
+  decode transparently, and the icon is appended to the page's .contact-icons
+  row so the about and CV pages keep the same set of icons as before.
+{% endcomment %}
+{% if site.email %}
+  <template id="contact-email-template">
+    <a href="mailto:{{ site.email | encode_email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+  </template>
+  <script>
+    (function () {
+      var tpl = document.getElementById('contact-email-template');
+      if (!tpl) return;
+      document.querySelectorAll('.contact-icons').forEach(function (row) {
+        row.appendChild(tpl.content.cloneNode(true));
+      });
+    })();
+  </script>
+{% endif %}
+
+{% comment %}
   Local override of al_folio_core's _includes/footer.liquid: identical to the
   gem template above, plus the visitor tracker below.
 

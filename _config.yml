@@ -6,6 +6,10 @@ title: Harry Lee # the website title (if blank, full name will be used instead)
 first_name: Harry
 middle_name:
 last_name: Lee
+# Contact address for the obfuscated email icon added by
+# _includes/footer.liquid. Kept out of _data/socials.yml so jekyll-socials
+# does not emit it as a plain-text mailto link.
+email: harrytyl@stanford.edu
 contact_note: >
   Please feel free to email me or DM on LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
