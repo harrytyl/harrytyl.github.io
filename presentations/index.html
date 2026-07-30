@@ -18,7 +18,15 @@
   .tag-invited { background-color: #dbeafe; border-color: #60a5fa; color: #1e40af; }
   .tag-oral { background-color: #dcfce7; border-color: #4ade80; color: #166534; }
   .tag-poster { background-color: #fef3c7; border-color: #fbbf24; color: #92400e; }
-</style> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Harry Lee. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <img src="https://mapmyvisitors.com/map.png?cl=080808&amp;w=500&amp;t=tt&amp;d=3p1XTk6Tlt7Xr21otjTDLHpsxo9ubf8Ro8r6rp1JD94&amp;co=ffffff&amp;ct=808080" alt="" aria-hidden="true" width="1" height="1" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;"> <script>
+</style> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Harry Lee. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <template id="contact-email-template"> <a href="mailto:%68%61%72%72%79%74%79%6C@%73%74%61%6E%66%6F%72%64.%65%64%75" title="Email"><i class="fa-solid fa-envelope"></i></a> </template> <script>
+    (function () {
+      var tpl = document.getElementById('contact-email-template');
+      if (!tpl) return;
+      document.querySelectorAll('.contact-icons').forEach(function (row) {
+        row.appendChild(tpl.content.cloneNode(true));
+      });
+    })();
+  </script> <img src="https://mapmyvisitors.com/map.png?cl=080808&amp;w=500&amp;t=tt&amp;d=3p1XTk6Tlt7Xr21otjTDLHpsxo9ubf8Ro8r6rp1JD94&amp;co=ffffff&amp;ct=808080" alt="" aria-hidden="true" width="1" height="1" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;"> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -642,13 +650,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("/assets/pdf/website_CV.pdf", "_blank");
-        },
-      },{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%68%61%72%72%79%74%79%6C@%73%74%61%6E%66%6F%72%64.%65%64%75", "_blank");
         },
       },{
         id: 'social-scholar',
