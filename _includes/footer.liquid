@@ -59,23 +59,20 @@
 
 {% comment %}
   Local override of al_folio_core's _includes/footer.liquid: identical to the
-  gem template above, plus the visitor tracker below.
+  gem template above, plus the analytics beacon below.
 
-  footer.liquid is included unconditionally by default.liquid, so putting the
-  tracker here counts a visit on every page of the site rather than only on the
-  about page. Requesting the image is what registers the visit; it is kept
-  1px and off-screen (rather than display:none, which lets browsers skip the
-  request) so nothing is drawn. Read the numbers at
-  https://mapmyvisitors.com/web/{{ site.visitor_map.web_id }}. Blank
-  visitor_map.tracker_id in _config.yml to switch tracking off.
+  footer.liquid is included unconditionally by default.liquid and renders
+  inside <body>, which is where Cloudflare requires the beacon, so every page
+  of the site is counted. Read the numbers in the Cloudflare dashboard under
+  Web Analytics; blank cloudflare_analytics.token in _config.yml to switch it
+  off.
 {% endcomment %}
-{% if site.visitor_map.tracker_id %}
-  <img
-    src="https://mapmyvisitors.com/map.png?cl=080808&w=500&t=tt&d={{ site.visitor_map.tracker_id }}&co=ffffff&ct=808080"
-    alt=""
-    aria-hidden="true"
-    width="1"
-    height="1"
-    style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;"
-  >
+{% if site.cloudflare_analytics.token %}
+  <!-- Cloudflare Web Analytics -->
+  <script
+    type="module"
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "{{ site.cloudflare_analytics.token }}"}'
+  ></script>
+  <!-- End Cloudflare Web Analytics -->
 {% endif %}

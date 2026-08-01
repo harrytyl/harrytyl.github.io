@@ -469,26 +469,15 @@ enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: true # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
 
-# Visitor counter shown in the info box at the bottom of the about page.
-# A static site cannot count its own visitors, so this is rendered by a
-# MapMyVisitors widget (https://mapmyvisitors.com, formerly ClustrMaps).
-# Blank out tracker_id to hide the info box entirely.
-#
-#   tracker_id  the "d=" value from the dashboard's install snippet
-#   web_id      the slug of the public stats page, mapmyvisitors.com/web/<web_id>
-#   widget      js    - the provider's recommended javascript widget
-#               image - the plain <img> fallback, linked to the stats page
-#
-# MapMyVisitors derives locations from visitor IP addresses, so consider
-# setting enable_cookie_consent above to true.
-visitor_map:
-  tracker_id: 3p1XTk6Tlt7Xr21otjTDLHpsxo9ubf8Ro8r6rp1JD94
-  web_id: 1c6vz
-  widget: image # js | image (only used when show_box is true)
-  # false: count visits silently - the about page loads the tracker with nothing
-  #        drawn on the page, and you read the numbers on the dashboard.
-  # true:  additionally show the visitor info box on the CV page.
-  show_box: false
+# Cloudflare Web Analytics. The beacon is added to every page by
+# _includes/footer.liquid. It is cookie-free and does not fingerprint visitors,
+# so it needs no consent banner, and it works on GitHub Pages even though the
+# site is not proxied through Cloudflare. The token is a public site token: it
+# is meant to be visible in the page source and grants no account access.
+# Read the numbers at https://dash.cloudflare.com/ > Web Analytics.
+# Blank the token to switch analytics off.
+cloudflare_analytics:
+  token: 283f0b3d7ac547389483cf50cd0149b7
 
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
