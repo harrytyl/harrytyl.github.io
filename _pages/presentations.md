@@ -22,10 +22,6 @@ nav_order: 3
 
 <ul class="talk-list">
   <li>
-    <span class="tag tag-oral">Oral</span> Group fairness in clinical prediction models: a case study in cancer screening policy.
-    <span class="talk-meta">2026 Joint Statistical Meetings, Boston — Aug 2026.</span>
-  </li>
-  <li>
     <span class="tag tag-oral">Oral</span> Long-term PM<sub>2.5</sub> exposure and lung cancer-specific mortality in patients who have never smoked across two healthcare systems.
     <span class="talk-meta">2026 World Conference on Lung Cancer, Seoul — Sep 2026.</span>
   </li>
@@ -36,6 +32,10 @@ nav_order: 3
 ### 2026
 
 <ul class="talk-list">
+  <li>
+    <span class="tag tag-oral">Oral</span> Group fairness in clinical prediction models: a case study in cancer screening policy.
+    <span class="talk-meta">2026 Joint Statistical Meetings, Boston — Aug 2026.</span>
+  </li>
   <li><span class="tag tag-poster">Poster</span> Evaluating composite eligibility criteria in lung cancer screening: the Multiethnic Cohort Study. <span class="talk-meta">SMDM 48th Annual Meeting, University of Oslo — Jun 2026.</span></li>
   <li><span class="tag tag-oral">Oral</span> Robust decision curve analysis for survival prediction models in the presence of informative censoring. <span class="talk-meta">SMDM 48th Annual Meeting, University of Oslo — Jun 2026. <em>(presented by mentee)</em></span></li>
   <li><span class="tag tag-invited">Invited Oral</span> From screening to survivorship: clinical utility of composite lung cancer screening criteria and post-diagnosis PM<sub>2.5</sub> exposure. <span class="talk-meta">Respirology Grand Rounds, The Centre for Lung Health, Vancouver — Jun 2026.</span></li>
