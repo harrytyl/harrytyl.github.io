@@ -1,8 +1,8 @@
 metadata:
   hindex: 11
   i10index: 13
-  last_updated: '2026-08-26'
-  total_citations: 394
+  last_updated: '2026-09-02'
+  total_citations: 397
 papers:
   PrF7kHIAAAAJ:0EnyYjriUFMC:
     citations: 27
@@ -25,11 +25,11 @@ papers:
     title: Cost-effectiveness of budesonide-formoterol vs inhaled epinephrine in US adults with mild asthma
     year: '2024'
   PrF7kHIAAAAJ:8k81kl-MbHgC:
-    citations: 31
+    citations: 32
     title: "ACCEPT 2\xB7 0: recalibrating and externally validating the acute COPD exacerbation prediction tool (ACCEPT)"
     year: '2022'
   PrF7kHIAAAAJ:IWHjjKOFINEC:
-    citations: 5
+    citations: 6
     title: 'Impact analysis of infant antibiotic exposure on the burden of asthma: a simulation modeling study'
     year: '2024'
   PrF7kHIAAAAJ:IjCSPb-OGe4C:
@@ -53,7 +53,7 @@ papers:
     title: 'Oncoshare-Lung: Novel three-way linkage of neighboring academic and community medical centers to state cancer registry for lung cancer.'
     year: '2025'
   PrF7kHIAAAAJ:Tyk-4Ss8FVUC:
-    citations: 59
+    citations: 60
     title: Should the number of acute exacerbations in the previous year be used to guide treatments in COPD?
     year: '2021'
   PrF7kHIAAAAJ:UeHWp8X0CEIC:
