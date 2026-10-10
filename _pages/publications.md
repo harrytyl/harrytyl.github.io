@@ -19,7 +19,7 @@ nav_order: 2
   </p>
   <div class="pubsum-stats">
     <div class="pubsum-stat">
-      <span class="pubsum-num">22</span>
+      <span class="pubsum-num">23</span>
       <span class="pubsum-label">Publications</span>
     </div>
     <div class="pubsum-stat">

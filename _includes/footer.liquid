@@ -59,7 +59,7 @@
 
 {% comment %}
   Local override of al_folio_core's _includes/footer.liquid: identical to the
-  gem template above, plus the analytics beacon below.
+  gem template above, plus the analytics beacon and visitor tracker below.
 
   footer.liquid is included unconditionally by default.liquid and renders
   inside <body>, which is where Cloudflare requires the beacon, so every page
@@ -75,4 +75,24 @@
     data-cf-beacon='{"token": "{{ site.cloudflare_analytics.token }}"}'
   ></script>
   <!-- End Cloudflare Web Analytics -->
+{% endif %}
+
+{% comment %}
+  MapMyVisitors tracker, loaded with the dashboard's javascript snippet on
+  every page so the whole site is counted, but kept in an off-screen box so
+  the map is never shown (display:none would let browsers skip loading it).
+  Read the numbers on the MapMyVisitors dashboard. Blank
+  visitor_map.tracker_id in _config.yml to switch it off.
+{% endcomment %}
+{% if site.visitor_map.tracker_id %}
+  <div
+    aria-hidden="true"
+    style="position: absolute; left: -9999px; top: 0; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none;"
+  >
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="//mapmyvisitors.com/map.js?d={{ site.visitor_map.tracker_id }}&cl=ffffff&w=a"
+    ></script>
+  </div>
 {% endif %}
