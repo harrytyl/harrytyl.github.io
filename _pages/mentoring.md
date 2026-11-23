@@ -24,41 +24,41 @@ nav_order: 6
 <ul class="mentee-list">
   <li>
     <b>Amirhosein Farahmand</b> <span class="tag tag-ug">Undergraduate</span><br>
-    <span class="talk-meta">Jun 2025 – present · Department of Mathematics, Statistics, and Computer Science, University of Tehran</span><br>
+    <span class="talk-meta">2025 – 2026 · Department of Mathematics, Statistics, and Computer Science, University of Tehran</span><br>
     Project: Robust decision curve analysis for survival risk prediction models in the presence of informative censoring.<br>
     <span class="talk-meta">First position: MSc student, University of Calgary.</span>
   </li>
   <li>
     <b>Junu Min</b> <span class="tag tag-hs">High school</span><br>
-    <span class="talk-meta">Jun 2025 – present · The American School, Japan</span><br>
+    <span class="talk-meta">2025 – 2026 · The American School, Japan</span><br>
     Project: Reproducibility of the Social Deprivation Index.<br>
     <span class="talk-meta">First position: Undergraduate student, Harvard University.</span>
   </li>
   <li>
     <b>Lydia Schwartz</b> <span class="tag tag-ug">Undergraduate</span><br>
-    <span class="talk-meta">Jul 2025 – Feb 2026 · Biomedical Computation and Public Policy, Stanford University</span><br>
+    <span class="talk-meta">2025 – 2026 · Biomedical Computation and Public Policy, Stanford University</span><br>
     Project: Implementing the Community Deprivation Index.
   </li>
   <li>
     <b>Michelle Choo</b> <span class="tag tag-hs">High school</span><br>
-    <span class="talk-meta">Jun – Sep 2025 · Phillips Exeter Academy, USA</span><br>
+    <span class="talk-meta">2025 Summer · Phillips Exeter Academy, USA</span><br>
     Project: Reproducibility of the Social Vulnerability Index.
   </li>
   <li>
     <b>Ishika Kaushik</b> <span class="tag tag-ug">Undergraduate</span><br>
-    <span class="talk-meta">Apr – Jun 2025 · Biomedical Sciences, University of California, Davis</span><br>
+    <span class="talk-meta">2025 Spring · Biomedical Sciences, University of California, Davis</span><br>
     Project: Social drivers of health indices.<br>
     <span class="talk-meta">First position: Software Quality Control, Senseonics.</span>
   </li>
   <li>
     <b>Nevrose Mangat</b> <span class="tag tag-ug">Undergraduate</span><br>
-    <span class="talk-meta">Jan – Aug 2021 · Faculty of Pharmaceutical Sciences, UBC</span><br>
+    <span class="talk-meta"> 2021 · Faculty of Pharmaceutical Sciences, UBC</span><br>
     Project: Scoping review of trends in asthma hospital admissions.<br>
     <span class="talk-meta">First position: Pharmacist.</span>
   </li>
   <li>
     <b>Jenny Lee</b> <span class="tag tag-ug">Undergraduate</span><br>
-    <span class="talk-meta">May – Aug 2017 · Department of Statistics, UBC</span><br>
+    <span class="talk-meta"> 2017 Summer · Department of Statistics, UBC</span><br>
     Project: Curation and analysis of the AirCare data.<br>
     <span class="talk-meta">First position: Data Engineer, Microsoft.</span>
   </li>
